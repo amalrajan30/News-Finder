@@ -1,0 +1,73 @@
+:root {
+  --primary: #dddddd;
+  --dark: #333333;
+  --light: #ffffff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+/* .wrapper{
+    background: var(--dark);
+} */
+img {
+  max-width: 100%;
+  box-shadow: var(--shadow);
+}
+button {
+  background: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  background: var(--primary);
+}
+header h1 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+.totlbody {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "cards cards search";
+}
+.cards {
+  display: grid;
+  grid-gap: 20px;
+  grid-area: cards;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.card {
+  background: var(--primary);
+  padding: 0.3rem 1rem;
+  box-shadow: var(--shadow);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.card:hover {
+  background: var(--light);
+}
+.search {
+  display: grid;
+  grid-area: search;
+}
+.inputs {
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-rows: 2rem;
+  background: var(--primary);
+}
+.inputs input {
+  box-shadow: var(--shadow);
+  background: var(--primary);
+  width: 98%;
+}
+@media (max-width: 700px) {
+  .totlbody {
+    grid-template-areas:
+      "cards"
+      "cards"
+      "search";
+  }
+}
