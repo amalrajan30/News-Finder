@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This App finds the latest blog posts and articles on a perticular topic and can also choose a source from which the articles and posts are pulled. It uses public api provided by [Newsapi.org](https://newsapi.org). And before you use/build the app add your api key in the envVariables.env file.
+This App finds the latest blog posts and articles on a perticular topic and can also choose a source from which the articles and posts are pulled. It uses public api provided by [Newsapi.org](https://newsapi.org). And before you use/build the app add your api key in the .env file.
 
 ## Available Scripts
 
@@ -26,8 +26,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
