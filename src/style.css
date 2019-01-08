@@ -1,12 +1,12 @@
 :root {
-  --primary: #dddddd;
-  --dark: #333333;
+  --primary: #ecf0f1;
+  --dark: #2c3e50;
   --light: #ffffff;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
-/* .wrapper{
-    background: var(--dark);
-} */
+ .wrapper{
+    background: #7f8c8d;
+} 
 img {
   max-width: 100%;
   box-shadow: var(--shadow);
@@ -18,7 +18,8 @@ button {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 header {
-  background: var(--primary);
+  background: var(--dark);
+  color: #2980b9;
 }
 header h1 {
   text-align: center;
