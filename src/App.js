@@ -22,17 +22,17 @@ class App extends Component {
   };
   handleInput = () => {
     fetch(
-      `https://newsapi.org/v2/everything?q=${this.state.kyword}&domain=${this.state.souce}.com&apiKey=${process.env.API_KEY}`
+      `https://newsapi.org/v2/everything?q=${this.state.kyword}&domain=${this.state.souce}.com&apiKey=${process.env.REACT_APP_API_KEY}`
     )
       .then(response => response.json())
       .then(data => this.setState({items:data.articles}));
   };
   componentDidMount() {
     fetch(
-      `https://newsapi.org/v2/everything?q=android&apiKey=${process.env.API_KEY}`
+      `https://newsapi.org/v2/everything?q=android&apiKey=${process.env.REACT_APP_API_KEY}`
     )
       .then(response => response.json())
-      .then(data => this.setState({ items: data.articles }));
+       .then(data => this.setState({items:data.articles}));
   }
   render() {
     return (
