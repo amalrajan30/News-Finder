@@ -1,5 +1,6 @@
 import React from "react";
 import "../style.css";
+import Loading from "../layouts/Loading";
 export class Cards extends React.Component {
   render() {
     let elements = [];
@@ -15,7 +16,7 @@ export class Cards extends React.Component {
         <div className="cardFooter">
           <p>{item.description}</p>
           <a className="buttn" href={item.url}>
-            <button>Read More</button>
+            <button style={{color:"#ecf0f1"}}>Read More</button>
           </a>
         </div>
       </div>

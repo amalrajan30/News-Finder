@@ -1,29 +1,30 @@
 :root {
-  --primary: #ecf0f1;
-  --dark: #2c3e50;
-  --light: #ffffff;
-  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --shadow: 0 1px 5px rgba(14, 14, 14, 0.8);
 }
  .wrapper{
-    background: #7f8c8d;
+    background: #303030;
 } 
 img {
   max-width: 100%;
   box-shadow: var(--shadow);
 }
 button {
-  background: var(--dark);
+  background: #303030;
   color: var(--light);
   padding: 0.6rem 1.3rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 header {
-  background: var(--dark);
-  color: #2980b9;
+  background: #212121;
+  color: #ecf0f1;
+  box-shadow: var(--shadow);
 }
 header h1 {
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .wrapper {
   display: grid;
@@ -41,27 +42,33 @@ header h1 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .card {
-  background: var(--primary);
+  background: #424242;
+  color: #ecf0f1;
   padding: 0.3rem 1rem;
   box-shadow: var(--shadow);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .card:hover {
-  background: var(--light);
+  background: #212121;
 }
 .search {
   display: grid;
   grid-area: search;
+  background: #303030
 }
+
 .inputs {
   display: grid;
   grid-gap: 20px;
   grid-auto-rows: 2rem;
-  background: var(--primary);
+  background: #303030;
 }
 .inputs input {
   box-shadow: var(--shadow);
-  background: var(--primary);
+  background: #424242;
+  border: none;
+  padding: 5px;
+  color: #ecf0f1;
   width: 98%;
 }
 @media (max-width: 700px) {

@@ -8,7 +8,7 @@ export default function Footer() {
   )
 }
 const footerStyle = {
-  background : '#444444',
+  background : '#212121',
   textAlign : 'center',
   color: '#ffffff'
 }
