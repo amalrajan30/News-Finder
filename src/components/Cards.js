@@ -1,6 +1,5 @@
 import React from "react";
 import "../style.css";
-import Loading from "../layouts/Loading";
 export class Cards extends React.Component {
   render() {
     let elements = [];
