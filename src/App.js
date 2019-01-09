@@ -15,14 +15,14 @@ class App extends Component {
     
   }
   handleKeywordChange = e => {
-    this.setState({ kyword: e.target.value.replace(/\s+/g, "").toLowerCase() });
+    this.setState({ kyword: e.target.value.replace(/\s+/g, "-").toLowerCase() });
   };
   handleSourceChange = e => {
     this.setState({ souce: e.target.value.replace(/\s+/g, '-').toLowerCase() });
   };
   handleInput = () => {
     fetch(
-      `https://newsapi.org/v2/everything?q=${this.state.kyword}&sources=${this.state.souce}.com&apiKey=${process.env.REACT_APP_API_KEY}`
+      `https://newsapi.org/v2/everything?q=${this.state.kyword}&sources=${this.state.souce}&apiKey=${process.env.REACT_APP_API_KEY}`
     )
       .then(response => response.json())
       .then(data => this.setState({items:data.articles}));
